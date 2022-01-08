@@ -1,6 +1,11 @@
 {
    "solidity.packageDefaultDependenciesDirectory": "node_modules/@scaffold-eth/hardhat/node_modules/",
    "solidity-va.test.defaultUnittestTemplate": "hardhat",
+   "solidity.packageDefaultDependenciesContractsDirectory": "packages/hardhat/contracts",
+   "solidity.remappings": [
+      "@openzeppelin=./packages/hardhat/node_modules/@openzeppelin",
+      "hardhat=./packages/hardhat/node_modules/hardhat"
+  ],
    "files.exclude": {
       "**/.git": true,
       "**/.svn": true,

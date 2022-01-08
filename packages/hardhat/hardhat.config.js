@@ -64,8 +64,12 @@ module.exports = {
   // Follow the directions, and uncomment the network you wish to deploy to.
 
   networks: {
+    hardhat: {
+      chainId: 31337
+    },
     localhost: {
       url: "http://localhost:8545",
+      chainId: 31337
       /*      
         notice no mnemonic here? it will just use account 0 of the hardhat node to deploy
         (you can put in a mnemonic here to set the deployer locally)
